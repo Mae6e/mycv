@@ -1,0 +1,51 @@
+
+### create new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email":"maedezebhi@gmail.com",
+  "password":"123123"
+}
+
+### signin user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email":"maedezebhi@gmail.com",
+  "password":"123123"
+}
+
+### who am i
+GET http://localhost:3000/auth/whoami
+
+### signout
+POST http://localhost:3000/auth/signout
+
+### find a particular user
+GET http://localhost:3000/auth/2
+
+
+### find all users
+GET http://localhost:3000/auth?email=maedehz@gmail.com
+
+
+### remove a particular user
+DELETE http://localhost:3000/auth/1
+
+
+### update a particular user
+PATCH  http://localhost:3000/auth/3
+Content-Type: application/json
+
+{
+  "email":"maedehz@gmail.com",
+  "password":"44444"
+}
+
+### set a color
+GET http://localhost:3000/auth/colors/blue
+
+### get the color
+GET http://localhost:3000/auth/colors
